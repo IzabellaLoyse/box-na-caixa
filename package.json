@@ -1,0 +1,13 @@
+{
+  "name": "box-na-caixa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch sass/styles.scss:css/styles.css --style compressed"
+  },
+  "keywords": [],
+  "author": "Izabella Loyse",
+  "license": "ISC"
+}

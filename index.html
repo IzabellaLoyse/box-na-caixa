@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Box na Caixa</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="header-top">
+        <div class="header-top-container">
+          <div class="store-info-container">
+            <span><i class="fas fa-phone"></i>(48) 99999-9999</span>
+            <span><i class="fas fa-envelope"></i> boxnacaixa@email.com</span>
+            <span
+              ><i class="fas fa-map-marker-alt"></i>Rua Das Caixas, 12A</span
+            >
+          </div>
+
+          <div class="header-user-top-menu">
+            <span><i class="fas fa-dollar-sign"></i><a href="#">BRL</a></span>
+            <span><i class="fas fa-user"></i><a href="#">Minha conta</a></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-header">
+        <div class="main-header-container">
+          <a href="#">Box na Caixa <i class="fa-solid fa-box-open"></i></a>
+
+          <form id="search-form">
+            <input
+              type="search"
+              id="search"
+              placeholder="O que você procura?"
+            />
+            <input type="submit" class="btn btn-half" value="Pesquisar" />
+          </form>
+
+          <div class="header-actions-menu">
+            <div class="wishlist-container">
+              <span class="amount">0</span>
+              <i class="fas fa-heart"></i>
+              <a href="#">Favoritos</a>
+            </div>
+
+            <div class="header-cart-container">
+              <span class="amount">0</span>
+              <i class="fas fa-shopping-cart"></i>
+              <a href="#">Carrinho</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="header-bottom">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">Celulares</a></li>
+            <li><a href="#">Câmeras</a></li>
+            <li><a href="#">Acessórios</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section class="banners">
+        <div class="banner banner-1">
+          <div class="banner-cover"></div>
+          <div class="banner-content">
+            <h2>Promoção de Notebooks</h2>
+            <a href="#">
+              Var mais
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="banner banner-2">
+          <div class="banner-cover"></div>
+          <div class="banner-content">
+            <h2>Lançamento de Acessórios</h2>
+            <a href="#">
+              Var mais
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="banner banner-3">
+          <div class="banner-cover"></div>
+          <div class="banner-content">
+            <h2>Câmeras Potentes</h2>
+            <a href="#">
+              Var mais
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-grid">
+        <h3>Novos Produtos</h3>
+
+        <div class="products-grid-container">
+          <div class="products-grid-card">
+            <span class="label new">Novo</span>
+            <img
+              src="assets/img/product-notebook.jpg"
+              alt="Imagem do Notebook Gamer Acer Nitro"
+            />
+            <p class="category">Categoria</p>
+            <h4 class="product-name">Notebook Gamer Acer Nitro 5</h4>
+            <p class="product-price">R$ 5.000,00</p>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <button type="button" class="btn">Comprar</button>
+          </div>
+
+          <div class="products-grid-card">
+            <span class="label new">Novo</span>
+            <img
+              src="assets/img/product-notebook-2.jpg"
+              alt="Imagem do Notebook Lenovo IdeaPad"
+            />
+            <p class="category">Categoria</p>
+            <h4 class="product-name">Notebook Lenovo IdeaPad</h4>
+            <p class="product-price">R$ 3.099,99</p>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <button type="button" class="btn">Comprar</button>
+          </div>
+
+          <div class="products-grid-card">
+            <span class="label new">Novo</span>
+            <img
+              src="assets/img/product-notebook-3.jpg"
+              alt="Imagem do Notebook Samsung galaxy Book Pro 360"
+            />
+            <p class="category">Categoria</p>
+            <h4 class="product-name">Notebook Samsung galaxy Book Pro 360</h4>
+            <p class="product-price">R$ 8.000,00</p>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <button type="button" class="btn">Comprar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="deal-container">
+        <div class="deal-container-content">
+          <div class="deal-container-content-timer">
+            <div class="deal-container-timer">
+              <span class="deal-container-timer-time">02</span>
+              <span class="deal-container-timer-word">Dias</span>
+            </div>
+
+            <div class="deal-container-timer">
+              <span class="deal-container-timer-time">12</span>
+              <span class="deal-container-timer-word">Horas</span>
+            </div>
+
+            <div class="deal-container-timer">
+              <span class="deal-container-timer-time">25</span>
+              <span class="deal-container-timer-word">Minutos</span>
+            </div>
+
+            <div class="deal-container-timer">
+              <span class="deal-container-timer-time">33</span>
+              <span class="deal-container-timer-word">Segundos</span>
+            </div>
+          </div>
+
+          <h2 class="deal-container-content-title">Promoção de Fone Gamer</h2>
+          <p class="deal-container-content-subtitle">
+            Toda a linha gamer com 50% de desconto
+          </p>
+          <button type="button" class="btn">Comprar agora</button>
+        </div>
+      </section>
+
+      <section class="products-grid">
+        <h3>Mais Vendidos</h3>
+
+        <div class="products-grid-container">
+          <div class="products-grid-card">
+            <span class="label hot">Hot</span>
+            <img
+              src="assets/img/product-headset-1.png"
+              alt="Headset Gamer Sem Fio Logitech G733 "
+            />
+            <p class="category">Categoria</p>
+            <h4 class="product-name">Headset Gamer Sem Fio Logitech G733</h4>
+            <p class="product-price">R$ 989,91</p>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <button type="button" class="btn">Comprar</button>
+          </div>
+
+          <div class="products-grid-card">
+            <span class="label hot">Hot</span>
+            <img
+              src="assets/img/product-headset-2.png"
+              alt="Imagem do Headset Gamer Logitech G733 Rgb Sem Fio"
+            />
+            <p class="category">Categoria</p>
+            <h4 class="product-name">
+              Headset Gamer Logitech G733 Rgb Sem Fio
+            </h4>
+            <p class="product-price">R$ 989,91</p>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <button type="button" class="btn">Comprar</button>
+          </div>
+
+          <div class="products-grid-card">
+            <span class="label hot">Hot</span>
+            <img
+              src="assets/img/product-headset-3.png"
+              alt="Imagem do Headset Gamer Warrior Straton USB 2.0"
+            />
+            <p class="category">Categoria</p>
+            <h4 class="product-name">Headset Gamer Warrior Straton USB 2.0</h4>
+            <p class="product-price">R$ 500,00</p>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+
+            <button type="button" class="btn">Comprar</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="newsletter-container">
+        <h2>Assine a nossa <span>Newsletter</span></h2>
+        <form>
+          <input type="email" id="email" placeholder="Digite seu e-mail" />
+          <input type="submit" class="btn btn-half" value="Assinar" />
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-top-about">
+          <h3>Sobre a <span>Loja</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatibus, quod, quia, voluptate quae voluptates quidem
+            necessitatibus voluptas quas quibusdam natus. Quisquam, quae
+            voluptates. Quisquam, quae voluptates. Quisquam, quae voluptates.
+          </p>
+          <p>
+            <i class="fas fa-location-arrow"></i>
+            <a href="#">Rua Das Caixas, 12A</a>
+          </p>
+          <p><i class="fas fa-phone"></i>(48) 99999-9999</p>
+          <p><i class="fas fa-envelope"></i> boxnacaixa@email.com</p>
+        </div>
+
+        <div class="footer-top-categories">
+          <h3>Categorias</h3>
+
+          <ul>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Headsets</a></li>
+            <li><a href="#">PC Gamer</a></li>
+            <li><a href="#">Câmeras</a></li>
+            <li><a href="#">Mouse e teclado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-top-information">
+          <h3>Informações</h3>
+
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Entre em contato</a></li>
+            <li><a href="#">Politica de privacidade</a></li>
+            <li><a href="#">Pedidos e devoluções</a></li>
+            <li><a href="#">Termos e condições</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-top-menu">
+          <h3>Menu</h3>
+
+          <ul>
+            <li><a href="#">Minha conta</a></li>
+            <li><a href="#">Carrinho</a></li>
+            <li><a href="#">Lista de Desejos</a></li>
+            <li><a href="#">Rastrear pedido</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-payments">
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-diners-club"></i>
+          <i class="fab fa-cc-amazon-pay"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+
+        <p>Copyright &copy; 2022 - Box na Caixa</p>
+      </div>
+    </footer>
+  </body>
+</html>
