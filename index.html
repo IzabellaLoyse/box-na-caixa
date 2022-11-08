@@ -41,11 +41,14 @@
 
       <section class="main-header">
         <div class="main-header-container">
-          <a href="#">Box na Caixa <i class="fa-solid fa-box-open"></i></a>
+          <a href="#" class="brand"
+            >Box na Caixa <i class="fa-solid fa-box-open"></i
+          ></a>
 
-          <form id="search-form">
+          <form class="search-form">
             <input
               type="search"
+              class="search-input"
               id="search"
               placeholder="O que você procura?"
             />
@@ -54,7 +57,7 @@
 
           <div class="header-actions-menu">
             <div class="wishlist-container">
-              <span class="amount">0</span>
+              <span class="amount">2</span>
               <i class="fas fa-heart"></i>
               <a href="#">Favoritos</a>
             </div>
@@ -128,7 +131,7 @@
               src="assets/img/product-notebook.jpg"
               alt="Imagem do Notebook Gamer Acer Nitro"
             />
-            <p class="category">Categoria</p>
+            <p class="category">Notebook</p>
             <h4 class="product-name">Notebook Gamer Acer Nitro 5</h4>
             <p class="product-price">R$ 5.000,00</p>
             <div class="rating-box">
@@ -147,7 +150,7 @@
               src="assets/img/product-notebook-2.jpg"
               alt="Imagem do Notebook Lenovo IdeaPad"
             />
-            <p class="category">Categoria</p>
+            <p class="category">Notebook</p>
             <h4 class="product-name">Notebook Lenovo IdeaPad</h4>
             <p class="product-price">R$ 3.099,99</p>
             <div class="rating-box">
@@ -166,7 +169,7 @@
               src="assets/img/product-notebook-3.jpg"
               alt="Imagem do Notebook Samsung galaxy Book Pro 360"
             />
-            <p class="category">Categoria</p>
+            <p class="category">Notebook</p>
             <h4 class="product-name">Notebook Samsung galaxy Book Pro 360</h4>
             <p class="product-price">R$ 8.000,00</p>
             <div class="rating-box">
@@ -224,7 +227,7 @@
               src="assets/img/product-headset-1.png"
               alt="Headset Gamer Sem Fio Logitech G733 "
             />
-            <p class="category">Categoria</p>
+            <p class="category">Headset</p>
             <h4 class="product-name">Headset Gamer Sem Fio Logitech G733</h4>
             <p class="product-price">R$ 989,91</p>
             <div class="rating-box">
@@ -243,7 +246,7 @@
               src="assets/img/product-headset-2.png"
               alt="Imagem do Headset Gamer Logitech G733 Rgb Sem Fio"
             />
-            <p class="category">Categoria</p>
+            <p class="category">Headset</p>
             <h4 class="product-name">
               Headset Gamer Logitech G733 Rgb Sem Fio
             </h4>
@@ -264,7 +267,7 @@
               src="assets/img/product-headset-3.png"
               alt="Imagem do Headset Gamer Warrior Straton USB 2.0"
             />
-            <p class="category">Categoria</p>
+            <p class="category">Headset</p>
             <h4 class="product-name">Headset Gamer Warrior Straton USB 2.0</h4>
             <p class="product-price">R$ 500,00</p>
             <div class="rating-box">
@@ -282,17 +285,24 @@
 
       <div class="newsletter-container">
         <h2>Assine a nossa <span>Newsletter</span></h2>
-        <form>
+        <form class="form">
           <input type="email" id="email" placeholder="Digite seu e-mail" />
           <input type="submit" class="btn btn-half" value="Assinar" />
         </form>
+
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
       </div>
     </main>
 
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-top-about">
-          <h3>Sobre a <span>Loja</span></h3>
+          <h3 class="footer-title">Sobre a <span>Loja</span></h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptatibus, quod, quia, voluptate quae voluptates quidem
@@ -308,7 +318,7 @@
         </div>
 
         <div class="footer-top-categories">
-          <h3>Categorias</h3>
+          <h3 class="footer-title">Categorias</h3>
 
           <ul>
             <li><a href="#">Promoções</a></li>
@@ -320,7 +330,7 @@
         </div>
 
         <div class="footer-top-information">
-          <h3>Informações</h3>
+          <h3 class="footer-title">Informações</h3>
 
           <ul>
             <li><a href="#">Sobre nós</a></li>
@@ -332,7 +342,7 @@
         </div>
 
         <div class="footer-top-menu">
-          <h3>Menu</h3>
+          <h3 class="footer-title">Menu</h3>
 
           <ul>
             <li><a href="#">Minha conta</a></li>

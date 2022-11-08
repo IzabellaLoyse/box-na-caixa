@@ -1,0 +1,43 @@
+@use 'variables';
+@use 'sass:map';
+
+html {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+i {
+  color: map.get(variables.$colors, 'primary-color');
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+
+  &:hover {
+    color: map.get(variables.$colors, 'primary-color');
+  }
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

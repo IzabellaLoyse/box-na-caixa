@@ -1,0 +1,59 @@
+@use 'sass:map';
+@use '../base/variables';
+@use '../base/breakpoints';
+@use '../base/mixins';
+
+.deal-container {
+  background-image: url(../../assets/img/product-headset-1.png);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-x: 95%;
+  background-position-y: 2rem;
+  background-color: map.get(variables.$colors, 'section-background-color');
+  padding: 2rem;
+  height: 25rem;
+
+  &-content {
+    @include mixins.center-content;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &-timer {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.deal-container-timer {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  background-color: map.get(variables.$colors, 'primary-color');
+  color: map.get(variables.$colors, 'light-color');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &-time {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.deal-container-content-title,
+.deal-container-content-subtitle {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.deal-container-content-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,7 @@
+@use '../base/mixins';
+
+.banners {
+  @include mixins.center-content;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

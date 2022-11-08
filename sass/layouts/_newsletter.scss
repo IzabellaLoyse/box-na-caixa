@@ -1,0 +1,51 @@
+@use 'sass:map';
+@use '../base/variables';
+@use '../base/breakpoints';
+@use '../base/mixins';
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-top: 2px solid map.get(variables.$colors, 'section-background-color');
+
+  h2 {
+    font-size: 2rem;
+    color: map.get(variables.$colors, 'dark-color');
+    margin-bottom: 2rem;
+  }
+
+  span {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+}
+
+.form {
+  display: flex;
+  margin-bottom: 3rem;
+
+  input[type='email'] {
+    @include mixins.rounded-input;
+    border: 1px solid map.get(variables.$colors, 'section-background-color');
+  }
+}
+
+.social-media {
+  i {
+    padding: 0.75rem;
+    margin: 0.3125rem;
+    border: 1px solid map.get(variables.$colors, 'section-background-color');
+    cursor: pointer;
+    color: map.get(variables.$colors, 'dark-color');
+    transition: 0.4s;
+
+    &:hover {
+      color: map.get(variables.$colors, 'primary-color');
+      background-color: map.get(variables.$colors, 'section-background-color');
+    }
+  }
+}

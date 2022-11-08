@@ -1,0 +1,73 @@
+@use 'sass:map';
+@use '../base/variables';
+@use '../base/breakpoints';
+@use '../base/mixins';
+
+.footer {
+  background-color: map.get(variables.$colors, 'background-color');
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  a,
+  p {
+    color: map.get(variables.$colors, 'gray-text-color');
+  }
+
+  li,
+  p {
+    margin-bottom: 1rem;
+
+    a {
+      &:hover {
+        color: map.get(variables.$colors, 'primary-color');
+      }
+    }
+  }
+
+  i {
+    margin-right: 0.3rem;
+  }
+}
+
+.footer-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: map.get(variables.$colors, 'light-color');
+}
+
+.footer-top {
+  @include mixins.center-content;
+  padding-bottom: 3rem;
+
+  &-about,
+  &-categories,
+  &-information,
+  &-menu {
+    max-width: 25%;
+  }
+}
+
+.footer-bottom {
+  @include mixins.center-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-payments {
+    margin-bottom: 2rem;
+
+    i {
+      color: map.get(variables.$colors, 'dark-color');
+      cursor: pointer;
+      font-size: 3rem;
+      margin: 0.3125rem;
+      transition: 0.4s;
+
+      &:hover {
+        color: map.get(variables.$colors, 'primary-color');
+      }
+    }
+  }
+}

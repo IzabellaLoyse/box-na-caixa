@@ -1,0 +1,64 @@
+@use 'sass:map';
+@use '../base/variables';
+@use '../base/breakpoints';
+@use '../base/mixins';
+
+.banner {
+  @include mixins.center-background;
+  width: 30%;
+  height: 200px;
+  position: relative;
+  color: map.get(variables.$colors, 'light-color');
+  transition: 0.4s;
+  background-size: 100%;
+
+  &:hover {
+    background-size: 120%;
+  }
+
+  &-cover {
+    background-color: map.get(variables.$colors, 'primary-color');
+    opacity: 0.5;
+    width: 70%;
+    height: 100%;
+    border-bottom-right-radius: 5rem;
+  }
+}
+
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+
+  h2 {
+    font-size: 2.1rem;
+    max-width: 70%;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+    color: map.get(variables.$colors, 'light-color');
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    i {
+      color: map.get(variables.$colors, 'light-color');
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+.banner-1 {
+  background-image: url('../../assets/img/product-notebook.jpg');
+}
+
+.banner-2 {
+  background-image: url('../../assets/img/product-mic.png');
+}
+
+.banner-3 {
+  background-image: url('../../assets/img/product-webcam.png');
+}

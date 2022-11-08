@@ -1,0 +1,25 @@
+@use 'sass:map';
+@use '../base/variables';
+
+.btn {
+  padding: 0.5rem 0.94rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  color: map.get(variables.$colors, 'light-color');
+  text-transform: uppercase;
+  background-color: map.get(variables.$colors, 'primary-color');
+  cursor: pointer;
+  border: 2px solid map.get(variables.$colors, 'primary-color');
+  font-weight: 700;
+
+  &:hover {
+    background-color: map.get(variables.$colors, 'light-color');
+    color: map.get(variables.$colors, 'primary-color');
+  }
+}
+
+.btn-half {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: none;
+}
