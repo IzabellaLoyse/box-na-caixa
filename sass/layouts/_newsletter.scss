@@ -11,6 +11,10 @@
   padding: 3rem;
   border-top: 2px solid map.get(variables.$colors, 'section-background-color');
 
+  @include breakpoints.mobile {
+    text-align: center;
+  }
+
   h2 {
     font-size: 2rem;
     color: map.get(variables.$colors, 'dark-color');
@@ -28,9 +32,17 @@
   display: flex;
   margin-bottom: 3rem;
 
+  @include breakpoints.mobile {
+    width: 100%;
+  }
+
   input[type='email'] {
     @include mixins.rounded-input;
     border: 1px solid map.get(variables.$colors, 'section-background-color');
+
+    @include breakpoints.mobile {
+      width: 100%;
+    }
   }
 }
 

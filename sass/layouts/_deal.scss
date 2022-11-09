@@ -13,6 +13,13 @@
   padding: 2rem;
   height: 25rem;
 
+  @include breakpoints.mobile {
+    background-size: 70%;
+    background-position-x: 130%;
+    background-position-y: 120%;
+    height: 43.75rem;
+  }
+
   &-content {
     @include mixins.center-content;
     flex-direction: column;
@@ -20,9 +27,19 @@
     align-items: center;
     justify-content: center;
 
+    @include breakpoints.mobile {
+      text-align: center;
+    }
+
     &-timer {
       display: flex;
       margin-bottom: 2rem;
+
+      @include breakpoints.mobile {
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+      }
     }
   }
 }
@@ -39,6 +56,10 @@
   flex-direction: column;
   margin-left: 1rem;
   margin-right: 1rem;
+
+  @include breakpoints.mobile {
+    margin-bottom: 1.5rem;
+  }
 
   &-time {
     font-size: 1.5rem;

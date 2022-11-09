@@ -1,12 +1,16 @@
 @use 'sass:map';
-@use '../base/variables';
 @use '../base/breakpoints';
+@use '../base/variables';
 @use '../base/mixins';
 
 .header {
   background-color: map.get(variables.$colors, 'background-color');
 
   &-top {
+    @include breakpoints.mobile {
+      display: none;
+    }
+
     background-color: map.get(variables.$colors, 'secondary-background-color');
     color: map.get(variables.$colors, 'light-color');
   }
@@ -35,6 +39,11 @@
     @include mixins.center-content;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+
+    @include breakpoints.mobile {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   a,
@@ -60,6 +69,12 @@
   justify-content: center;
   width: 45%;
 
+  @include breakpoints.mobile {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   input {
     height: 2.5rem;
   }
@@ -77,6 +92,9 @@
   .wishlist-container,
   .header-cart-container {
     @include mixins.header-icon;
+    @include breakpoints.mobile {
+      margin: 1rem;
+    }
   }
 }
 
@@ -90,6 +108,10 @@
     @include mixins.center-content;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    @include breakpoints.mobile {
+      display: none;
+    }
 
     li {
       margin-right: 1.3rem;

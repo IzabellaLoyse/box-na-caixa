@@ -12,6 +12,11 @@
   transition: 0.4s;
   background-size: 100%;
 
+  @include breakpoints.mobile {
+    width: 90%;
+    margin: 1rem;
+  }
+
   &:hover {
     background-size: 120%;
   }
